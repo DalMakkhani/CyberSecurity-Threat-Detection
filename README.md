@@ -5,7 +5,7 @@ This project implements a real-time cybersecurity intrusion detection system tha
 ---
 
 📁 realtime-threat-detection/
-'''bash
+```bash
 ├── datasets/
 │   ├── combined_dataset.csv          # Combined and final dataset (CSE-CIC-IDS2018, 1000 samples per attack)
 │   └── preprocessed_dataset.csv      # Preprocessed data used for model training (from Preprocessing.ipynb)
@@ -16,7 +16,7 @@ This project implements a real-time cybersecurity intrusion detection system tha
 │
 ├── README.md                         # Project documentation
 └── requirements.txt                  # Python dependencies
-'''
+```
 ---
 
 ## 💡 System Overview
@@ -77,15 +77,16 @@ Together, they enable a **high-throughput, low-latency pipeline** for network th
    ```bash
    git clone https://github.com/yourusername/realtime-threat-detection.git
    cd realtime-threat-detection
+   ```
 2. **Install dependencies:**
 
-   '''bash
+   ```bash
    pip install -r requirements.txt
-
+   ```
 3. **Run preprocessing on sample data:**
    Open source_code/Preprocessing.ipynb and run all cells.
 
-4.**Train or load model:**
+4. **Train or load model:**
    Execute Model_Training.ipynb to train or load the TabNet model.
 
-**Stream real-time data from Wireshark into HDFS** (daemon script expected here, based on your future implementation).
+5. *Stream real-time data from Wireshark into HDFS** (daemon script expected here, based on your future implementation).
