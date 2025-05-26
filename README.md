@@ -4,19 +4,19 @@ This project implements a real-time cybersecurity intrusion detection system tha
 
 ---
 
-## 📂 Folder Structure
+📁 realtime-threat-detection/
+'''bash
 ├── datasets/
-│ ├── combined_dataset.csv # Combined and Final dataset of CSE-CIC-IDS2018 with 1000 samples per attack
-│ └── preprocessed_dataset.csv # Preprocessed data used for model training(Got from Preprocessing.ipynb)
+│   ├── combined_dataset.csv          # Combined and final dataset (CSE-CIC-IDS2018, 1000 samples per attack)
+│   └── preprocessed_dataset.csv      # Preprocessed data used for model training (from Preprocessing.ipynb)
 │
 ├── source_code/
-│ ├── Preprocessing.ipynb # Spark-based preprocessing and feature engineering
-│ └── Model_Training.ipynb # TabNet model training and evaluation notebook
+│   ├── Preprocessing.ipynb           # Spark-based preprocessing and feature engineering
+│   └── Model_Training.ipynb          # TabNet model training and evaluation notebook
 │
-├── README.md # Project documentation
-├── requirements.txt # Python dependencies
-
-
+├── README.md                         # Project documentation
+└── requirements.txt                  # Python dependencies
+'''
 ---
 
 ## 💡 System Overview
@@ -77,3 +77,15 @@ Together, they enable a **high-throughput, low-latency pipeline** for network th
    ```bash
    git clone https://github.com/yourusername/realtime-threat-detection.git
    cd realtime-threat-detection
+2. **Install dependencies:**
+
+   '''bash
+   pip install -r requirements.txt
+
+3. **Run preprocessing on sample data:**
+   Open source_code/Preprocessing.ipynb and run all cells.
+
+4.**Train or load model:**
+   Execute Model_Training.ipynb to train or load the TabNet model.
+
+**Stream real-time data from Wireshark into HDFS** (daemon script expected here, based on your future implementation).
